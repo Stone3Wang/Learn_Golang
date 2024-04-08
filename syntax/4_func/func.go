@@ -1,16 +1,17 @@
 package main
 
-import "fmt"
-
 func main() {
 	//Invoke()
 	//Recursive()
 	//Defer()
 	//DeferClosure()
 	//DeferClosureV1()
-	fmt.Println("DeferReturn", DeferReturn())
-	fmt.Println("DeferReturnV1", DeferReturnV1())
-	fmt.Println("DeferReturnV2", DeferReturnV2().name)
+	//fmt.Println("DeferReturn", DeferReturn())
+	//fmt.Println("DeferReturnV1", DeferReturnV1())
+	//fmt.Println("DeferReturnV2", DeferReturnV2().name)
+	DeferClosureLoopV1()
+	DeferClosureLoopV2()
+	DeferClosureLoopV3()
 }
 
 // 接收返回值

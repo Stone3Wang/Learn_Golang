@@ -67,6 +67,27 @@ type MyStruct struct {
 	name string
 }
 
-//看看变更多少，又变了一次
+func DeferClosureLoopV1() {
+	for i := 0; i < 10; i++ {
+		defer func() {
+			println(i)
+		}()
+	}
+}
 
-//增加一个注释
+func DeferClosureLoopV2() {
+	for i := 0; i < 10; i++ {
+		defer func(val int) {
+			println(val)
+		}(i)
+	}
+}
+
+func DeferClosureLoopV3() {
+	for i := 0; i < 10; i++ {
+		j := 1
+		defer func() {
+			println(j)
+		}()
+	}
+}
