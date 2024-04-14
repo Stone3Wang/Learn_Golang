@@ -7,7 +7,7 @@ func main() {
 	ForSlice()
 	ForMap()
 	ForContinue()
-	ForBreak()
+	//ForBreak()
 	println(Switch(3))
 	println(Switch2(24))
 }
