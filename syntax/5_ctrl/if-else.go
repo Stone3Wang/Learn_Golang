@@ -1,10 +1,5 @@
 package main
 
-func main() {
-	println(IfNewVar(100, 250))
-	println(IfElseIf(15))
-}
-
 func IfOnly(age int) string {
 	if age >= 18 {
 		return "成年了"
