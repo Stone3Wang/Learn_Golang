@@ -43,17 +43,17 @@ func ShareSlice() {
 	fmt.Printf("s1:%v,len:%d,cap:%d \n", s1, len(s1), cap(s1))
 	fmt.Printf("s2:%v,len:%d,cap:%d \n", s2, len(s2), cap(s2))
 
-	println("取子切片改元素值后:\n")
+	fmt.Printf("取子切片改元素值后:\n")
 	s2[0] = 99
 	fmt.Printf("s1:%v,len:%d,cap:%d \n", s1, len(s1), cap(s1))
 	fmt.Printf("s2:%v,len:%d,cap:%d \n", s2, len(s2), cap(s2))
 
-	println("扩容第一次:\n")
+	fmt.Printf("扩容第一次:\n")
 	s2 = append(s2, 200)
 	fmt.Printf("s1:%v,len:%d,cap:%d \n", s1, len(s1), cap(s1))
 	fmt.Printf("s2:%v,len:%d,cap:%d \n", s2, len(s2), cap(s2))
 
-	println("扩容第二次:\n")
+	fmt.Printf("扩容第二次:\n")
 	s2 = append(s2, 300)
 	fmt.Printf("s1:%v,len:%d,cap:%d \n", s1, len(s1), cap(s1))
 	fmt.Printf("s2:%v,len:%d,cap:%d \n", s2, len(s2), cap(s2))
