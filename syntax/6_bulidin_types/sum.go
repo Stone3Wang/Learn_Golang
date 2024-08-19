@@ -2,7 +2,7 @@ package main
 
 func Sum(vals []int) int {
 	var res int
-	for _, v := range vlals {
+	for _, v := range vals {
 		res += v
 	}
 	return res
@@ -10,14 +10,14 @@ func Sum(vals []int) int {
 
 func SumInt64(vals []int64) int64 {
 	var res int64
-	for _, v := range vlals {
+	for _, v := range vals {
 		res += v
 	}
 	return res
 }
 func SumInt32(vals []int32) int32 {
 	var res int32
-	for _, v := range vlals {
+	for _, v := range vals {
 		res += v
 	}
 	return res

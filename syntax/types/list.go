@@ -31,3 +31,10 @@ func (l *LinkedList) Add(index int, value any) {
 type node struct {
 	next *node
 }
+
+func UseListV1() {
+	l := &LinkedList{}
+	l.Add(0, 1)
+	l.Add(1, "123")
+	l.Add(2, nil)
+}
